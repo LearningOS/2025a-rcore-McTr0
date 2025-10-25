@@ -19,3 +19,6 @@ pub const APP_SIZE_LIMIT: usize = 0x20000;
 pub const CLOCK_FREQ: usize = 12500000;
 /// the physical memory end
 pub const MEMORY_END: usize = 0x88000000;
+
+/// maximum syscall id we track in per-task counters (must be >= 410)
+pub const MAX_SYSCALL_ID: usize = 512;
